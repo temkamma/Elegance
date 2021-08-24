@@ -1,0 +1,694 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header {
+  height: 120px;
+  margin-top: 39px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 84px;
+}
+
+.header-menu {
+  margin-top: 4px;
+}
+
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-menu-list li {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  margin-right: 28px;
+}
+
+.header-right img {
+  padding-right: 12px;
+}
+
+.burger {
+  display: none;
+}
+
+.summer {
+  height: 737px;
+}
+
+.summer-row {
+  height: 737px;
+  background: url("../img/main/woman.png") 98% no-repeat;
+}
+
+.summer-card-title {
+  padding-top: 193px;
+  max-width: 670px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 96px;
+  color: #000000;
+}
+
+.summer-card-subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  color: #000000;
+  max-width: 569px;
+}
+
+.summer-card-btn {
+  margin-top: 60px;
+  height: 51px;
+  width: 181px;
+  background: #F72464;
+  -webkit-box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+          box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+  border-radius: 4px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.products {
+  margin-top: 60px;
+}
+
+.products-title {
+  padding-top: 14px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+}
+
+.products-subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 40px;
+}
+
+.products-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-column {
+  max-width: 270px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.products-column-last {
+  margin-right: 0;
+}
+
+.products-column-name {
+  margin-top: 6px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.products-column-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.white {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+  padding-right: 7px;
+}
+
+.red {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F72464;
+  padding-left: 7px;
+}
+
+.products-btn {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+  border: 1px solid #F72464;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 229px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.get {
+  height: 188px;
+  background: url("../img/main/womanback.png") center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.get-row {
+  height: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.get-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.get-btn {
+  width: 181px;
+  height: 51px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F72464;
+  -webkit-box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+          box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dream {
+  background: url("../img/main/Rectangle.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.blog {
+  margin-top: 65px;
+}
+
+.blog-title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+}
+
+.blog-subtitle {
+  margin-top: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 88px;
+}
+
+.blog-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  max-width: 570px;
+  max-height: 170px;
+  margin-bottom: 40px;
+}
+
+.blog-card-last {
+  margin-right: 0px;
+}
+
+.blog-card-info {
+  padding-left: 30px;
+  /*display: flex;
+  flex-direction: column;*/
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-card-title {
+  max-width: 282px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.blog-card-text {
+  max-width: 370px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.blog-card-btn {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  padding-right: 23px;
+  background: url("../img/main/blog/Shape.png") right 5px no-repeat;
+}
+
+.blog-btn {
+  margin-top: 36px;
+}
+
+.join {
+  margin-top: 20px;
+}
+
+.join-container {
+  max-width: 832px;
+  margin: 0 auto;
+}
+
+.join-title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.join-text {
+  max-width: 630px;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+.formich {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.inputick {
+  width: 229px;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #F72464;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+::-moz-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+::-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+.buttonchick {
+  margin-left: 10px;
+  height: 42px;
+  width: 134px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F72464;
+  border-radius: 4px;
+}
+
+.footer {
+  padding-top: 30px;
+  background: #000000;
+  height: 181px;
+}
+
+.footer-container {
+  width: 571px;
+  margin: 0 auto;
+}
+
+.footer-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-menu-link {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-icon-a {
+  margin-right: 30px;
+}
+
+.web {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #999999;
+}
